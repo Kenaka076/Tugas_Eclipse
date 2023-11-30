@@ -18,14 +18,14 @@ Mahasiswa ani = new Mahasiswa();
 		ani.setJeniskelamin(true);
 		
 
-Dosen budi = new Dosen();
+Dosen levi = new Dosen();
 
-        budi.setNip("Nip: 5678");
-        budi.setNama("Nama: Budi");
-        budi.setAlamat("Alamat: Denpasar");
-        budi.setMataKuliah("Pengampu: Aloritma Pemograman");
-        budi.setTanggalLahir("Tanggal Lahir: 15 Februari 1985");
-        budi.setJeniskelamin(false);
+        levi.setNip("Nip: 5678");
+        levi.setNama("Nama: Levi Akkaman");
+        levi.setAlamat("Alamat: Wall Maria");
+        levi.setMataKuliah("Pengampu: Aloritma Pemograman");
+        levi.setTanggalLahir("Tanggal Lahir: 25 Desember 1985");
+        levi.setJeniskelamin(false);
 		
 		
 		/*ani.nim 			= "123";
@@ -50,12 +50,12 @@ Dosen budi = new Dosen();
 		System.out.println(ani.getJeniskelamin());
 		
 		
-        System.out.println(budi.getNip());
-        System.out.println(budi.getNama());
-        System.out.println(budi.getAlamat());
-        System.out.println(budi.getMataKuliah());
-        System.out.println(budi.getTanggalLahir());
-        System.out.println(budi.getJeniskelamin());
+        System.out.println(levi.getNip());
+        System.out.println(levi.getNama());
+        System.out.println(levi.getAlamat());
+        System.out.println(levi.getMataKuliah());
+        System.out.println(levi.getTanggalLahir());
+        System.out.println(levi.getJeniskelamin());
 
 	}
 
