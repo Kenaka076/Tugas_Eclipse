@@ -1,13 +1,31 @@
 package id.ac.undiksha.siak.people;
 
-public class Mahasiswa {
-	
+import id.ac.undiksha.siak.organisasi.Prodi;
+
+public class Mahasiswa extends Manusia {
+
+
 	private String nim;
-	private String nama;
-	private String alamat;
-	private String prodi;
-	private String tanggalLahir;
-	private boolean jeniskelamin;
+	//private String prodi;
+	private Prodi prodi = new Prodi();
+
+	//menurunkan sifat manusia
+	public Mahasiswa() {
+		this.nim 			= "<masukan nim>";
+		//this.prodi 			= "<masukan prodi>";
+	}
+	public Mahasiswa(
+			String nim, 
+			String nama, 
+			String alamat, 
+			String prodi, 
+			String tanggalLahir, 
+			boolean jeniskelamin) {
+		super();
+		this.nim = nim;
+		//this.prodi = prodi;
+	}
+	
 	
 	public void setNim(String nim) {
 		this.nim = nim;
@@ -17,53 +35,25 @@ public class Mahasiswa {
 		return this.nim;
 	}
 
-	public String getNama() {
-		return nama;
-	}
-
-	public void setNama(String nama) {
-		this.nama = nama;
-	}
-
-	public String getAlamat() {
-		return alamat;
-	}
-
-	public void setAlamat(String alamat) {
-		this.alamat = alamat;
-	}
-
-	public String getProdi() {
-		return prodi;
-	}
+   // public String getProdi() {
+		//return prodi;
+	//}
 
 	public void setProdi(String prodi) {
+		//this.prodi = prodi;
+	}
+
+	
+	public void printAll() {
+		super.printAll();         //Dapat memanggil seluruh object dengan memakai superclassnya
+		System.out.println(this.getNim());
+		//System.out.println(this.getProdi());
+		
+	}
+	
+
+	public void setProdi(Prodi prodi) {
 		this.prodi = prodi;
 	}
-
-	public String getTanggalLahir() {
-		return tanggalLahir;
-	}
-
-	public void setTanggalLahir(String tanggalLahir) {
-		this.tanggalLahir = tanggalLahir;
-	}
-
-	public boolean isJeniskelamin() {
-		return jeniskelamin;
-	}
-	
-	public String getJeniskelamin() {
-		if (this.isJeniskelamin()) {
-			return "Perempuan";
-		}else {
-			return "Laki-laki";
-		}
-	}
-
-	public void setJeniskelamin(boolean jeniskelamin) {
-		this.jeniskelamin = jeniskelamin;
-	}
-	
 	
 }

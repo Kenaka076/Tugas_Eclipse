@@ -1,8 +1,2 @@
-/**
- * 
- */
-/**
- * 
- */
-module SIAK {
+module JavaTest2 {
 }
